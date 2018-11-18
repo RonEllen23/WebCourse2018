@@ -1,0 +1,436 @@
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+FONTS That can be use */
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: AvantGarde Normal;
+  src: url('../fonts/poppins/AVANTN.ttf');
+}
+
+@font-face {
+	font-family: Euphemia;
+  src: url('../fonts/poppins/euphemia.ttf');
+}
+
+@font-face {
+	font-family: Fragua-Bold;
+  src: url('../fonts/poppins/Fragua-Bold.ttf');
+}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0; height: 104%; overflow: hidden;
+
+}
+.bg{
+  font-family: Fragua-Bold,AvantGarde Normal,Poppins-Medium, Ariel ,sans-serif,Euphemia;
+  background-image:url("../images/BGtwenty for ever.jpg");
+  background-position:center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*---------------------------------------------*/
+/*forget your password*/
+a {
+	font-family: Poppins-Medium;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+    color: #eef44b;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: Poppins-Medium;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+  margin: 0px;
+
+}
+
+
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #adadad;}
+input:-moz-placeholder { color: #adadad;}
+input::-moz-placeholder { color: #adadad;}
+input:-ms-input-placeholder { color: #adadad;}
+
+textarea::-webkit-input-placeholder { color: #adadad;}
+textarea:-moz-placeholder { color: #adadad;}
+textarea::-moz-placeholder { color: #adadad;}
+textarea:-ms-input-placeholder { color: #adadad;}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+.txt1 {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
+
+.txt2 {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.bgFac {background-color: #3b5998}
+.bgGoo {background-color: #ea4335}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+/* width- to move the scrren to the rigth*/
+.loginPage {
+  width: 107%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrap {
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+/*------------------------------------------------------------------
+[ Form (twenty for ever titel]*/
+
+.loginform {
+  width: 100%;
+
+}
+
+.loginFormTitle {
+  display:initialx;
+  font-family:Fragua-Bold;
+  font-size: 63px;
+  color: #fafafa;
+  line-height: 1.05;
+  text-align: cover;
+  text-shadow: 2px 2px #251c1c;
+}
+
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrapInput {
+  width: 100%;
+  position: relative;
+  border-bottom: 3px solid #d9d9d9;
+  text-shadow: 0.5px 0.5px #251c1c;
+  color: white;
+}
+
+.labelInputUser {
+  font-family: Poppins-Bold;
+  font-size: 14px;
+  color: #f3eded;
+  line-height: 1.5;
+  padding-left: 7px;
+  text-shadow: 2px 2px #130c0c;
+}
+/*input color*/
+.input {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.2;
+
+  display: block;
+  width: 100%;
+  height: 55px;
+  background: transparent;
+  padding: 0 7px 0 43px;
+}
+
+
+/*---------------------------------------------*/
+.focusInput {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focusInput::after {
+  content: attr(data-symbol);
+  font-family: Material-Design-Iconic-Font;
+  color: #adadad;
+  font-size: 30px;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: calc(100% - 20px);
+  bottom: 0;
+  left: 0;
+  padding-left: 13px;
+  padding-top: 3px;
+}
+
+.focusInput::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #7f7f7f;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+.input:focus + .focusInput::before {
+  width: 100%;
+}
+
+.has-val.input + .focusInput::before {
+  width: 100%;
+}
+
+.input:focus + .focusInput::after {
+  color: #f4d54b;
+}
+
+.has-val.input + .focusInput::after {
+  color: #f4d54b;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.containerFormBtn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapLoginFormBtn {
+  width: 50%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -moz-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -webkit-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+}
+
+.loginFormbgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  /**Adding colors to style the button show**/
+  background: #000000;
+  background: -webkit-linear-gradient(right,  rgb(85, 151, 238), rgb(85, 151, 238));
+  background: -o-linear-gradient(right,  rgb(85, 151, 238), white);
+  background: -moz-linear-gradient(right,  rgb(85, 151, 238), white);
+  background: linear-gradient(right, rgb(85, 151, 238), white);
+  top: 0;
+  left: -100%;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+}
+
+/**Font of the button **/
+.loginformBtn {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #574747;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.wrapLoginFormBtn:hover .loginFormbgbtn {
+  left: 0;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Social item ]*/
+.social-item {
+  font-size: 25px;
+  color: #fff;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.social-item:hover {
+  color: #fff;
+  background-color: #333333;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+  .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

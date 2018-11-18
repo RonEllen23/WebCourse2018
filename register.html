@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Account details </title>
+      <link rel="stylesheet" type="text/css" href="../Home/fonts/font-awesome-4.7.0/css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="../Home/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/profile.css">
+      <link rel="stylesheet" type="text/css" href="../Home/styles/layout.css">
+      <script type="text/javascript" src="js/profile.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/animsition/js/animsition.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/bootstrap/js/popper.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/select2/select2.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/daterangepicker/moment.min.js"></script>
+      <script src="vendor/daterangepicker/daterangepicker.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/countdowntime/countdowntime.js"></script>
+      <!--===============================================================================================-->
+      <link rel="stylesheet" href="styles/layout.css" type="text/css">
+
+  </head>
+  <body>
+    <div class="wrapper row1">
+      <header id="header" class="clear">
+        <div id="hgroup">
+          <h1><a href="Home/home_page.html">TWENTY FOR EVER</a></h1>
+          <h2>Shopping Online</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Home/home_page.html">HOME</a></li>
+            <li><a href="chart.html">CHART</a></li>
+            <li><a href="#">ACCOUNT</a></li>
+            <li><a href="index.html">LOGOUT</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+<div class="body-content">
+  <div class="module">
+    <form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="off">
+      <fieldset>
+          <legend>  <h1>	<i class="fa fa-user-plus"></i>Create an Account</h1></legend>
+      <div class="alert alert-error"></div>
+      <label for="Name">Enter Full name </label>
+      <input type="text" placeholder="Enter your full name" name="username" required />
+      <label for="Email">Enter email </label>
+      <input type="email" placeholder="Email" name="email" required="true" />
+      <label for="password">Enter password </label>
+      <input type="password" placeholder="Password" name="password" autocomplete="new-password" required />
+      <label for="password">Confirm Password </label>
+      <input type="password" placeholder="Confirm Password" name="confirmpassword" autocomplete="new-password" required />
+      <label for="phone">Enter phone </label>
+      <input type="text" placeholder="Phone number" name="phone" required />
+      <label for="address">Address </label>
+      <input type="text" placeholder="Address" name="Address" required />
+      <label for="birthDate">Date of birth </label>
+      <input type="date" name="birthDate" required />
+      <input type="button" value="update" name="Update" class="btn btn-block btn-primary" onclick="returnToHome()" />
+      </fieldset>
+    </form>
+  </div>
+</div>
+<!--footer-->
+<div class="wrapper row3">
+  <div id="footer" class="clear">
+    <!-- Section One -->
+    <section class="one_quarter">
+      <h2 class="title">HELP & INFORMATION</h2>
+      <nav>
+        <ul>
+          <li><a href="#">help</a></li>
+          <li><a href="#">Track order</a></li>
+          <li><a href="#">Amaizing Discount</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Section Two -->
+    <section class="one_quarter">
+      <h2 class="title">ABOUT US</h2>
+      <nav>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Jobs in twenty for ever </a></li>
+          <li><a href="#">Corparagte Responsibility</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Section Three -->
+    <section class="one_quarter">
+      <h2 class="title">MORE FROM US</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Twenty for ever Marketplace</a></li>
+          <li><a href="#">Crazy Black Friday</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- Section Four -->
+    <section class="one_quarter lastbox">
+      <h2 class="title">SHOPING FROM</h2>
+      <nav>
+        <ul>
+          <li><a href="#">You're in &nbsp &nbsp<img src="images/icons/israel-icon-small.png" alt="Israel flag"></a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- / Section -->
+  </div>
+</div>
+<!-- Copyright -->
+<div class="wrapper row4">
+  <footer id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy;  - All Rights Reserved -</p>
+    <p class="fl_right">Orgad Shushan</p><br>
+      <p class="fl_right">Ron Ellenbogen</p>
+  </footer>
+</div>
+
+  </body>
+</html>
